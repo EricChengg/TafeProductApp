@@ -11,10 +11,15 @@ namespace ProductApps
         private decimal price;
         private int quantity;
         private decimal totalPayment;
-        private decimal delivery;
+        private decimal delivery = 25.0m;
         private decimal wrapping;
         private decimal gst;
 
+        private decimal TotalCharge
+        {
+            get { return totalCharge; }
+            set { totalCharge = value; }
+        }
         private decimal Price
         {
             get { return price; }
@@ -65,5 +70,6 @@ namespace ProductApps
         {
             TotalPayment = Price * Quantity;
         }
+
     }
 }
