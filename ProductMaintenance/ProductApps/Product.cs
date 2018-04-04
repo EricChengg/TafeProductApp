@@ -15,11 +15,7 @@ namespace ProductApps
         private decimal wrapping;
         private decimal gst;
 
-        private decimal TotalCharge
-        {
-            get { return totalCharge; }
-            set { totalCharge = value; }
-        }
+
         private decimal Price
         {
             get { return price; }
